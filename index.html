@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Coffee Shop</title>
+    <link rel="stylesheet" href="styles.css" >
+
+</head>
+<body>
+    <header>
+        <div class="logo" >
+            
+            <h1>PSR Coffee Shop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#order">Order</a></li>
+                <li><a href="#payment">Payment</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Your Daily Dose of Coffee</h2>
+            <p>Enjoy the finest brews in a cozy atmosphere.</p>
+            <a href="#menu" class="btn">View Menu</a>
+        </div>
+    </section>    
+    <main>
+    
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At PSR Coffee Shop, we believe in providing the best quality coffee sourced from local farmers. Our friendly staff is here to make your experience delightful!</p>
+            <p>Come and relax in our cozy space, or grab your favorite brew on the go!</p>
+        </section>
+
+    </main>
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="expressoo.jpg" alt="Espresso" class="menu-image"> 
+                <h3>Espresso</h3>
+                <p>300</p>
+            </div>
+            <div class="menu-item">
+                <img src="cappuccino.jpg" alt="Cappuccino" class="menu-image">
+                <h3>Cappuccino</h3>
+                <p>400</p>
+            </div>
+            <div class="menu-item">
+                <img src="latte.jpg" alt="Latte" class="menu-image">
+                <h3>Latte</h3>
+                <p>450</p>
+            </div>
+            <div class="menu-item">
+                <img src="mocha.jpg" alt="Mocha" class="menu-image">
+                <h3>Mocha</h3>
+                <p>500</p>
+            </div>
+            <div class="menu-item">
+                <img src="tea.jpg" alt="Tea" class="menu-image">
+                <h3>Tea</h3>
+                <p>200</p>
+            </div>
+         <div class="menu-item">
+                <img src="pastries.jpg" alt="Pastries" class="menu-image">
+                <h3>Pastries</h3>
+                <p>120</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="order">
+        <h2>Order Your Coffee</h2>
+        <form id="order-form">
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Espresso</h3>
+                    <p>300</p>
+                    <label for="espresso-quantity">Quantity:</label>
+                    <input type="number" id="espresso-quantity" name="espresso" min="0" value="0">
+                </div>
+                <div class="menu-item">
+                    <h3>Cappuccino</h3>
+                    <p>400</p>
+                    <label for="cappuccino-quantity">Quantity:</label>
+                    <input type="number" id="cappuccino-quantity" name="cappuccino" min="0" value="0">
+                </div>
+            </div>
+          
+            <input type="text" id="customer-name" placeholder="Your Name" required>
+            <input type="email" id="customer-email" placeholder="Your Email" required>
+            <input type="text" id="textarea" placeholder="Address" required>
+            
+            <button type="submit" >Place Order</button>
+        </form>
+    
+        <div id="order-summary" style="display:none;"></div>
+    </section>
+    
+
+            <section id="payment">
+                <h2>Payment Information</h2>
+                <form id="payment-form">
+                    <div class="form-group">
+                        <label for="card-name">Cardholder Name</label>
+                        <input type="text" id="card-name" placeholder="Mohd kaif" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expiry-date">Expiry Date</label>
+                        <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="123" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Pay Now</button>
+                    </div>
+                </form>
+            </section>
+            
+
+
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        
+        <div id="review-form">
+            <h3>Leave a Review</h3>
+            <form id="submit-review">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <select id="rating" required>
+                    <option value="">Rate Us</option>
+                    <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+                    <option value="4">⭐️⭐️⭐️⭐️</option>
+                    <option value="3">⭐️⭐️⭐️</option>
+                    <option value="2">⭐️⭐️</option>
+                    <option value="1">⭐️</option>
+                </select>
+                <textarea id="comment" placeholder="Your Comment" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    
+        <div id="review-list">
+            <h3>Check the  Reviews</h3>
+        </div>
+    </section>
+    
+
+    <footer>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:info@PSRcoffeeshop.com">info@psrcoffeeshop.com</a></p>
+            <p>Phone: 7510058510</p>
+            <p>Address: INDIRA NAGAR SECTOR 14, LUCKNOW </p>
+        </section>
+        <p>&copy; 2024 PSR Coffee Shop. All rights reserved.</p>
+    </footer>
+</body>
+</html>
